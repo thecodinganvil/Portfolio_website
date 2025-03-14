@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Osman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#who-i-am">Who I Am?</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#lets-talk">Get In Touch</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-sec" id="who-i-am">
+        <div class="hero-content">
+            <h1 class="hero-name">Mohammed Osman</h1>
+            <h2 class="hero-profession">Front-end Developer</h2>
+            <p class="hero-intro">
+                Hey, I'm <span class="name">Osman</span> — a Front-end developer who brings web ideas to life with sleek design and powerful code. Let's build something extraordinary!
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-title">Skills</div>
+        <div class="container">
+            <div class="box">C</div>
+            <div class="box">C++</div>
+            <div class="box">Python</div>
+            <div class="box">HTML</div>
+            <div class="box">CSS</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-title">Projects</div>
+        <div class="container">
+            <div class="box"><a href="#">Personal Portfolio Website</a></div>
+            <div class="box"><a href="#">Amazon Clone</a></div>
+        </div>
+    </section>
+   <!-- Contact Section -->
+<section class="section" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <a href="mailto:muhammedosmanraheemkhan@gmail.com" target="_blank" class="contact-link">
+                <span class="contact-icon"></span>
+                <span class="contact-text">Email</span>
+            </a>
+        </div>
+        <div class="contact-card">
+            <a href="https://www.instagram.com/cyber._guy/" target="_blank" class="contact-link">
+                <span class="contact-icon"></span>
+                <span class="contact-text">Instagram</span>
+            </a>
+        </div>
+        <div class="contact-card">
+            <a href="https://www.linkedin.com/in/mohammed-osman-262708327/" target="_blank" class="contact-link">
+                <span class="contact-icon"></span>
+                <span class="contact-text">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Mohammed Osman. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
